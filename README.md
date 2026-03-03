@@ -1,6 +1,6 @@
 # LRRN: Lightweight Remote Sensing Image Recognition Network
 
-This repository contains the official PyTorch implementation of the paper **"LRRN: Efficient Multi-Scale Feature Fusion for Lightweight Remote Sensing Image Recognition"** by Chen et al. (2025).
+This repository contains the official PyTorch implementation of the paper **"LRRN: Efficient Multi-Scale Feature Fusion for Lightweight Remote Sensing Image Recognition"** by Chen et al. (2026).
 
 The code includes the proposed LRRN model (composed of FIN and CNH modules), baseline networks, training/testing scripts, and the HBUA-NR5 dataset used in transfer learning experiments.
 
@@ -279,11 +279,11 @@ Comparison with baselines: LRRN achieves the highest Accuracy per Parameter (APP
 If you find this work useful for your research, please cite our paper:
 
 ```bibtex
-@article{chen2025lrrn,
+@article{chen2026lrrn,
   title={Efficient Multi-Scale Feature Fusion for Lightweight Remote Sensing Image Recognition},
   author={Chen, et al.},
-  journal={GPS Solutions},
-  year={2025}
+  journal={The Visual Computer},
+  year={2026}
 }
 ```
 ## 🙌 Acknowledgements
