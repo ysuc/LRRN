@@ -47,7 +47,7 @@ class LRRN(nn.Module):
         self.out=nn.Sequential(nn.Dropout(0.6),
 							   nn.Linear(64*64*32,45)
 		)
-        #self.pool=nn.MaxPool2d(kernel_size=2)
+        self.pool=nn.MaxPool2d(kernel_size=2)
 
 
     def forward(self,x):
@@ -61,10 +61,10 @@ class LRRN(nn.Module):
         x7 = self.relu(self.convT3(x6))
 
         h=self.conv11(x7)
-        #h=self.pool(h)
+        h=self.pool(h)
         h=self.conv13(h)
         h=self.conv12(h)
-        #h=self.pool(h)
+        h=self.pool(h)
         h=self.conv14(h)
         h=h.view(-1,64*64*32)  #卷积块一维化(即每个数据都一维化，minibatch_size表示数据数量)
         o=self.out(h)
